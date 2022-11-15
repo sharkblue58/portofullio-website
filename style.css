@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #f0f0f0;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+}
+
+.logo {
+    text-decoration: none;
+    color: #3a6cf4;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #3a6cf4;
+    padding: 10px 20px;
+    font-size: 20px;
+    position: relative;
+}
+
+.navigation a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-bottom: 2px solid navy;
+    transition: 0.6s linear;
+}
+
+.navigation a:hover:before {
+    width: 100%;
+}
+
+section {
+    padding: 100px 200px;
+}
+
+.main {
+
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url("./assets/mo.jpg") no-repeat;
+    background-size: 100% 100%;
+    background-position: top;
+    background-attachment: fixed;
+}
+
+.main h2 {
+    font-size: 1.4em;
+    color: #fff;
+    font-weight: 500;
+}
+
+.main h2 span {
+    display: inline-block;
+    margin-top: 10px;
+    color: #4e9eff;
+    font-size: 3em;
+    font-weight: 600;
+}
+
+.main h3 {
+    color: #fff;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.main-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    background-color: #3a6cf4;
+    padding: 0.9375em 2.1875em;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 0.7s ease;
+}
+
+.main-btn:hover {
+    background-color: #0a49f6;
+    transform: scale(1.1);
+
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 1.7em;
+    padding-right: 30px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: #3a6cf4;
+    font: size 2.2em;
+    font: weight 800px;
+    margin-bottom: 30px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 10px;
+    padding: 25px 35px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.icon {
+    color: #3a6cf4;
+    font-size: 8em;
+    text-align: center;
+}
+
+.info h3 {
+    color: #3a6cf4;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10;
+    text-align: center;
+}
+.info p {
+    color: #000;
+    margin: 10;
+    text-align: center;
+}
+
+.left {
+    width: 50%;
+
+}
+
+.right {
+    height: 65vh;
+    width: 50%;
+    border-radius: 50%;
+    background-color: #fff;
+    overflow: hidden;
+    background: url("./assets/mo.png") no-repeat;
+    background-position: center;
+    padding-left: 25%;
+    padding-right: 25%;
+
+
+}
+
+.me {
+    width: 100%;
+    margin: 0;
+
+
+}
+
+.projects {
+    background: #000016
+}
+
+.projects .content {
+
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.project-card {
+    background: white;
+    border: 1px solid white;
+    min-height: 14em;
+    width: 20em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.1);
+}
+
+.project-card:hover .project-image {
+    opacity: 0.9;
+}
+
+.project-image img {
+    width: 100%;
+}
+
+.project-info {
+    padding: 1em;
+}
+
+.project-category {
+    font-size: 0.8em;
+    color: #000;
+}
+
+.project-title {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.more-details {
+    text-decoration: none;
+    color: #3a6cf4;
+}
+
+.more-details:hover {
+
+    color: #601cfc;
+}
+
+h5 {
+    color: #000;
+    text-shadow: O O 5px #999;
+}
+
+.certification .content {
+
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.cert-card {
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    transition: 0.5s ease;
+}
+
+.cert-card:hover {
+    transform: translateY(-10px);
+}
+
+
+.card1 {
+    background-image: url('./assets/10.png');
+}
+
+.card2 {
+    background-image: url('./assets/11.png');
+}
+
+.card3 {
+    background-image: url('./assets/5.png');
+}
+
+.card4 {
+    background-image: url('./assets/7.png');
+}
+
+.card5 {
+    background-image: url('./assets/8.png');
+}
+
+.card6 {
+    background-image: url('./assets/9.png');
+}
+.contact {
+    background: #000016
+}
